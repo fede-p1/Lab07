@@ -54,5 +54,10 @@ public class FXMLController {
     
     public void setModel(Model model) {
     	this.model = model;
+    	
+    	for (Nerc n : this.model.getNercList()) {
+    		this.cmbNerc.getItems().add(n);
+    	}
+    	
     }
 }
